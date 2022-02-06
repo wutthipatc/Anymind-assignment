@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "3574f67e-e1c0-4e86-8b68-27c6c9344d0c",
+		"name": "Anymind-assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "bitcoin/get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bitcoin/get?startDateTime=2022-01-01T00:00:00%2B00:00&endDateTime=2022-02-05T21:00:00%2B00:00",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bitcoin",
+						"get"
+					],
+					"query": [
+						{
+							"key": "startDateTime",
+							"value": "2022-01-01T00:00:00%2B00:00"
+						},
+						{
+							"key": "endDateTime",
+							"value": "2022-02-05T21:00:00%2B00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bitcoin/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 1.1,\n    \"dateTime\": \"2022-02-05T20:00:00+00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/bitcoin/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bitcoin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

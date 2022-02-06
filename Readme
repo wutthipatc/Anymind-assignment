@@ -1,0 +1,20 @@
+Please run through the steps below to play with the project
+- Import project into an IDE, for example IntelliJ IDEA
+- Open the terminal to root directory of the project
+- Run command docker-compose up to start the Kafka server (Must install docker-compose in the machine first)
+- Start the project from Main object
+- Use the attached postman collection to call two provided APIs (Import collection Json file to Postman first)
+Enjoy!!!
+
+*** Please be aware that the order of dateTime field in request body of adding bitcoin amount API is matter, you must sequentially call
+this API with ascendant time.
+For example
+{
+    "amount": 1.1,
+    "dateTime": "2022-02-05T20:00:00+00:00"
+}
+{
+    "amount": 1.1,
+    "dateTime": "2022-02-05T20:01:00+00:00"
+}
+These must be in order.
